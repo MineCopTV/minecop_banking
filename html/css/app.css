@@ -1,0 +1,257 @@
+body {background-color: transparent; width: 100%;}
+.active {background-color: rgba(0,0,0,0.5);}
+.wrapper {
+    width: 90%;
+    margin: auto;
+}
+.alert {
+    margin: auto;
+    font-size: 22px;
+    position: absolute;
+    left: 50%;
+    top: 88%;
+    transform: translate(-50%, -88%);
+}
+.topbar {
+    min-height: 50px;
+    padding: 10px;
+}
+.topbar > nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* Bank Pages */
+#mainBankPage {position: absolute;}
+#mainBankPage {
+    width: 1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bank-page {
+    height: 600px;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+.bank-contacts-list {
+    height: 295px;
+    max-height: 295px;
+}
+.bank-contacts-list > .card-body {overflow-y: scroll;}
+#bankTransferContacts > label {
+    overflow: hidden;
+    font-size: 20px;
+    white-space: nowrap;
+}
+#bankTransferContacts > label > button {
+    font-size: 20px;
+    position: absolute;
+    top: 1px;
+    right: 0px;
+}
+/* ATM Pages */
+#mainATMPage {position: absolute;}
+#mainATMPage {
+    width: 1200px;
+    top: 11%;
+    left: 40%;
+    transform: translate(-40%, -11%);
+    height: 850px;
+    background: rgb(148,148,148);
+    background: linear-gradient(165deg, rgba(148,148,148,1) 0%, rgba(100,100,116,1) 54%, rgba(68,68,68,1) 100%);
+    overflow: hidden;
+    border-radius: 10px;
+}
+.atm-background-icon {
+    opacity: 20%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+}
+.atm-screen {
+    height: 480px;
+}
+.atm-screen > .frame {
+    height: 100%;
+    margin: 15px;
+    background: rgb(212,212,212);
+    background: linear-gradient(340deg, rgba(212,212,212,1) 0%, rgba(159,159,159,1) 100%);
+    border-radius: 25px;
+}
+.atm-screen > .frame > .screen {
+    width: 90%;
+    height: 410px;
+    position: relative;
+    top: 7%;
+    left: 5%;
+    background-image: url(../img/atm-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.atm-screen-column {
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.atm-keyboard {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding: 0 140px 0 140px;
+}
+.atm-keys-utility, .atm-keys-numbers, .atm-keys-actions {
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: rgb(212,212,212);
+    background: linear-gradient(340deg, rgba(212,212,212,1) 0%, rgba(159,159,159,1) 100%);
+    border-radius: 15px;
+}
+.atm-keys-numbers {
+    width: 260px;
+    flex-wrap: wrap;
+}
+.atm-keys-utility, .atm-keys-actions {
+    flex-direction: column;
+}
+.atm-btn {
+    height: 60px;
+    width: 60px;
+    font-size: 22px;
+    padding: 0;
+    padding-top: 14px;
+}
+.atm-card-slot {
+    margin: 120px 20px 0 0;
+    height: 100px;
+    background: rgb(212,212,212);
+    background: linear-gradient(340deg, rgba(212,212,212,1) 0%, rgba(159,159,159,1) 100%);
+    border-radius: 15px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.atm-card-slot > div {
+    height: 20px;
+    width: 80%;
+    background-color: black;
+    border-radius: 15px;
+}
+.atm-card-image {
+    margin-top: 150px;
+    transform: rotate(270deg) translateY(-5%);
+}
+/* Pay Pages */
+#mainPayPage {position: absolute;}
+#mainPayPage {
+    width: 500px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    height: 771px;
+    overflow: hidden;
+    background-image: url(../img/pay-terminal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#topbarPay {
+    position: absolute;
+    left: 46%;
+    top: 2%;
+    transform: translate(-46%, -2%);
+    box-shadow: 0 0 15px black;
+}
+#payPayPass {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 46.5%;
+    top: 32%;
+    transform: translate(-46.5%, -32%);
+}
+#payTraditional {
+    width: 80px;
+    height: 420px;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-100%, -25%);
+}
+.pay-screen {
+    width: 70%;
+    height: 140px;
+    position: absolute;
+    left: 47%;
+    top: 12.5%;
+    transform: translate(-49%, 0);
+}
+.pay-keyboard {
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    left: 40%;
+    top: 85%;
+    transform: translate(-41%, -85%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.pay-btn {
+    height: 60px;
+    width: 100px;
+    font-size: 26px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 5px black;
+    font-weight: bold;
+}
+/* Cards */
+.debit-card {
+    margin: 10px;
+    width: 370px;
+    height: 190px;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    border-radius: 15px;
+    background-image: url(../img/atm-card-background-black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+.debit-card > .debit-card-owner {
+    position: absolute;
+    top: 41%;
+    left: 22%;
+    transform: translateY(-40%);
+}
+.debit-card > .debit-card-paypass {
+    position: absolute;
+    top: 71%;
+    left: 5%;
+}
+/* Utilities */
+.btn-option, .btn-input {
+    width: 100%;
+    height: 75px;
+    line-height: 60px;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+.column-center {
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
